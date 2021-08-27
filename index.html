@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my First Web Based JS Code.</h1>
+    <h2>Adding two values viz 2, 2</h2>
+    <h2>Addition</h2>
+    <p id="add"></p>
+    <h2>Subtraction</h2>
+    <p id="sub"></p>
+    <h2>Multiplication</h2>
+    <p id="mul"></p>
+    <h2>Division</h2>
+    <p id="div"></p>
+
+
+    <button type="button" onclick="myfunc1()">Click me to view a secret message.</button>
+    <p id="demo"></p>
+    
+    
+    <h3>The following button will print the page.</h3>
+    <button onclick="window.print()">Print this page</button>
+
+    <br>
+
+    <h3>The following button will change the content.</h3>
+    <button type="button" onclick="myfunc2()">Click me to change the button.</button>
+    <p id="changemessage">I'm gonna change once you click the button.</p>
+
+    <script>
+        document.getElementById("add").innerHTML=2+2;
+        document.getElementById("sub").innerHTML=2-2;
+        document.getElementById("mul").innerHTML=2*2;
+        document.getElementById("div").innerHTML=2/2;
+        window.alert("This is a Basic Window Alert. Don't worry.");
+
+        function myfunc1(){
+            document.getElementById("demo").innerHTML="Hello World!";
+        }
+
+        function myfunc2(){
+            document.getElementById('changemessage').innerHTML="I have changed.";
+        }
+
+
+
+    </script>
+</body>
+</html>
